@@ -36,7 +36,7 @@ struct Directory
 {
     Directory() {}
     Directory(string &name) : name(name) {}
-    // I could use smart pointers and make my life easier but since it wasn't imported to the libs i dunno if that's allowed
+    // I could use smart pointers and make my life easier but yolo
     ~Directory()
     {
         for (auto child : children)
@@ -181,7 +181,6 @@ string findPath(Directory *source, Directory *dist)
 
 int main()
 {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
     
     // test 1st value
     //string sourceName  = "./aa/././bb/./cc";
