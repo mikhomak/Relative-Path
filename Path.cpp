@@ -182,17 +182,20 @@ string findPath(Directory *source, Directory *dist)
 int main()
 {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-
-    string sourceName  = "./aa/././bb/./cc";
-    //cin >> sourceName;
+    
+    // test 1st value
+    //string sourceName  = "./aa/././bb/./cc";
+    cin >> sourceName;
 
     Directory root;
     root.isRoot = true;
     Directory *source;
     constructTree(&root, sourceName, source, false);
 
-    string destName  = "aa/cc/dd";
-    //cin >> destName;
+    // test 2nd value
+    //string destName  = "aa/cc/dd";
+    cin >> destName;
+    
     Directory *dest;
     constructTree(&root, destName, dest, true);
 
